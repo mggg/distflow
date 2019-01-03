@@ -206,10 +206,9 @@ onload="renderMathInElement(document.body, {delimiters: [
 
   			<ul>
   				<li>
-  					<h4>Discriminative</h4> There should be a meaningful way of <em> ordering </em> districts based on the entries of the 
-  					score vector. 
-  					For example, if we sort all of our districts by the first entry, the resulting order should say something 
-  					about the relative compactness of the districts.
+  					<h4>Discriminative</h4> The score should provide meaningful information about the geometry of the district. Ideally, it 
+            should allow us to compare two districting plans from the same state and make an assessment about their compactnesses 
+            relative to each other.  					
   				</li>
   				<li>
   					<h4>Explainable</h4> The measure should be easy to communicate to the parties invested in the redistricting process, 
@@ -233,8 +232,8 @@ onload="renderMathInElement(document.body, {delimiters: [
   		<h3> Curve-Shortening Flow </h3>
 
   		<p>
-  			What is curve-shortening flow? For those who care about such things, we'll restrict our attention to simple, closed 
-  			curves in the plane.  Given such a curve, curve-shortening flow is a process which shrinks the region so that its 
+  			What is curve-shortening flow? We'll restrict our attention to simple, closed curves in the plane, which means that it doesn't cross itself or 
+         double back, and it forms the boundary of a region.  Given such a curve, curve-shortening flow is a process which shrinks the region so that its 
   			<em> area </em> decreases at a constant rate and its <em> length </em> (<em>perimeter</em>) decreases as quickly as possible.  
   			This process will transform the boundary of any kind of region we might think of to a "round point" (the limit of a circle as 
   			you take its radius to zero).  We can intuitively think of curve-shortening flow as slowly "ironing out" the boundary of our region,
@@ -266,13 +265,13 @@ onload="renderMathInElement(document.body, {delimiters: [
   			The procedure to perform curve-shortening flow is pretty straightforward. At each point on the boundary of our region, 
   			we'll find the tangent line and move that point inward in the direction perpendicular to the tangent. How far to move it 
   			will depend on the <em> curvature </em> of the boundary at the point.  The last missing piece is to articulate a definition 
-  			of curvature.  Intuitively, curvature measures how "bendy" the boundary is at a particular point.  If our point lies in a very 
-  			squiggly portion of the boundary, then the curvature is large. If our point is in a portion that looks like a straight line, 
+  			of curvature.  Intuitively, curvature measures how "curvy" the boundary is at a particular point.  If our point lies on a very 
+  			bendy portion of the boundary, then the curvature at that point is large. If our point is on a portion that looks like a straight line, 
   			then the curvature is small.  
   		</p>
 
   		<p>
-  			Formally, we measure curvature in the following way. First, we can look at the neighborhood of our point on the boundary 
+  			Formally, we can measure curvature in the following way. First, we can look at the neighborhood of our point on the boundary 
   			and imagine that it's a small segment on the circumference of a circle with some radius $r$, called the <em>osculating circle</em>.
   			Then, the curvature at that point is $1/r$ if it's a point of <em>positive curvature</em> or $-1/r$ if it's a point of 
   			<em>negative curvature</em>.  If we're looking at a point on a line segment, then we say that the curvature is zero.
@@ -356,9 +355,10 @@ onload="renderMathInElement(document.body, {delimiters: [
   			previous section, we described a method to compute the curve-shortening flow procedure, which covers the first two items.  
   			The measure is stable since any small perturbation in a shape will be quickly smoothed out by the curve-shortening flow procedure, 
   			meaning that we get almost identical plots for two very similar shapes.  The final criterion is that the measure be discriminative, 
-  			and we can at the very least argue semi-formally that it's <em>at least </em> as discriminative as the Polsby-Popper score, since this 
-  			plot lets us recover the Polsby-Popper score.  Since we've normalized the area of these shapes very particularly, the Polsby-Popper score 
-  			of a region is exactly $1/\mathrm{Perimeter}$ after we've run zero steps of curve-shortening flow.  We'll see below that we can glean 
+  			and we can at the very see that it's <em>at least </em> as discriminative as the Polsby-Popper score, since we can recover the 
+        Polsby-Popper score from the information contained in these plots.  Specifically, because we've normalized the area of these shapes 
+        very particularly, the Polsby-Popper score of a region is exactly $1/\mathrm{Perimeter}$ 
+        after we've run zero steps of curve-shortening flow.  We'll see below that we can glean 
   			much more information that just the Polsby-Popper score from these plots, but since it's at least as good as a standard measure, 
   			we can be satisfied that our plots are not meaningless.
 
