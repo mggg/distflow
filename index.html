@@ -242,7 +242,7 @@ onload="renderMathInElement(document.body, {delimiters: [
   			into a circle of the same area.
   		</p>
   		<p>
-  			Here's a brief animation of this transformation applied to MD-3, played forwards (district to circle) and backwards (circle to district).
+  			Here's a brief animation of this transformation applied to <span class="brown">MD-3</span>, played forwards (district to circle) and backwards (circle to district).
   		</p>
 
 
@@ -250,7 +250,7 @@ onload="renderMathInElement(document.body, {delimiters: [
 
   			<div>
   				<svg height="200" width="200" id='animbox'>
-  					<polygon id="animflow" points="" style="fill:#1199ee;stroke:#000;stroke-width:2;fill-opacity:.3" />
+  					<polygon id="animflow" points="" style="fill:#991111;stroke:#000;stroke-width:2;fill-opacity:.3" />
 
   				</svg>
 
@@ -370,9 +370,9 @@ onload="renderMathInElement(document.body, {delimiters: [
   		<p>
   			To demonstrate this measure, we'll examine the plots of three districts.  Below are images of the three districts as well as animations showing 
   			the progress of the curve-shortening flow procedure.  The plots on the right have the number of steps on the horizontal axis and the perimeter 
-  			of the figure at that step on the vertical axis.  From left to right, these are "worst offenders" <span class="purple">MD-3</span>   
-        and <span class="teal">TX-35</span>, 
-  			as well as <span class="orange">OK-1</span>.  Since these districts all come from different states, we should be careful not to use 
+  			of the figure at that step on the vertical axis.  From left to right, these are "worst offenders" <span class="brown">MD-3</span>   
+        and <span class="green">TX-35</span>, 
+  			as well as <span class="blue">OK-1</span>.  Since these districts all come from different states, we should be careful not to use 
         this data to inform any judgment about whether or not these districts are part of a gerrymander.  This exercise is purely geometric.  
 
   		</p>
@@ -386,23 +386,23 @@ onload="renderMathInElement(document.body, {delimiters: [
   			<svg width="200" height="450" id = demoflowcomp1>
   				<g>
   					<text y="50" x="100" text-anchor="middle" font-size="24" >MD-3</text>
-  					<polygon id="demodflowc1" transform="translate(0,50)" points="" style="fill:#9911ee;stroke:#000;stroke-width:2;fill-opacity:.3" />
-  					<polygon id="demodshowc1" transform="translate(0,250)" points="" style="fill:#9911ee;stroke:#000;stroke-width:2;fill-opacity:.3" />
+  					<polygon id="demodflowc1" transform="translate(0,50)" points="" style="fill:#991111;stroke:#000;stroke-width:2;fill-opacity:.3" />
+  					<polygon id="demodshowc1" transform="translate(0,250)" points="" style="fill:#991111;stroke:#000;stroke-width:2;fill-opacity:.3" />
   				</g>
   			</svg>
 
   			<svg width="200" height="450" id = demoflowcomp2>
   				<g>
   					<text y="50" x="100" text-anchor="middle" font-size="24" >TX-35</text>
-  					<polygon id="demodflowc2" transform="translate(0,50)" points="" style="fill:#11ee99;stroke:#000;stroke-width:2;fill-opacity:.3" />
-  					<polygon id="demodshowc2" transform="translate(0,250)" points="" style="fill:#11ee99;stroke:#000;stroke-width:2;fill-opacity:.3" />
+  					<polygon id="demodflowc2" transform="translate(0,50)" points="" style="fill:#119911;stroke:#000;stroke-width:2;fill-opacity:.3" />
+  					<polygon id="demodshowc2" transform="translate(0,250)" points="" style="fill:#119911;stroke:#000;stroke-width:2;fill-opacity:.3" />
   				</g>
   			</svg>
   			<svg width="200" height="450" id = demoflowcomp3>
   				<g>
   					<text y="50" x="100" text-anchor="middle" font-size="24">OK-1</text>
-  					<polygon id="demodflowc3" transform="translate(0,50)" points="" style="fill:#ee9911;stroke:#000;stroke-width:2;fill-opacity:.3" />
-  					<polygon id="demodshowc3" transform="translate(0,250)" points="" style="fill:#ee9911;stroke:#000;stroke-width:2;fill-opacity:.3" />
+  					<polygon id="demodflowc3" transform="translate(0,50)" points="" style="fill:#111199;stroke:#000;stroke-width:2;fill-opacity:.3" />
+  					<polygon id="demodshowc3" transform="translate(0,250)" points="" style="fill:#111199;stroke:#000;stroke-width:2;fill-opacity:.3" />
   				</g>
   			</svg>
   		</div>
@@ -418,16 +418,16 @@ onload="renderMathInElement(document.body, {delimiters: [
   			<svg height="530" width = "500" id="demoplotspace">
 
 
-  				<polyline id="demoflowplot1" points="" style="stroke:#9911ee;stroke-width:3;fill:none;stroke-opacity:.5" />
-  				<polyline id="demoflowplot2" points="" style="stroke:#11ee99;stroke-width:3;fill:none;stroke-opacity:.5" />
-  				<polyline id="demoflowplot3" points="" style="stroke:#ee9911;stroke-width:3;fill:none;stroke-opacity:.5" />
+  				<polyline id="demoflowplot1" points="" style="stroke:#991111;stroke-width:3;fill:none;stroke-opacity:.5" />
+  				<polyline id="demoflowplot2" points="" style="stroke:#119911;stroke-width:3;fill:none;stroke-opacity:.5" />
+  				<polyline id="demoflowplot3" points="" style="stroke:#111199;stroke-width:3;fill:none;stroke-opacity:.5" />
 
-  				<circle id="demotrack1" cx="0" cy="0" r="5" stroke="#9911ee" stroke-width="3" fill="#9911ee" stroke-opacity=".4" fill-opacity=".4"/>
+  				<circle id="demotrack1" cx="0" cy="0" r="5" stroke="#991111" stroke-width="3" fill="#9911ee" stroke-opacity=".4" fill-opacity=".4"/>
   				<text id = "demotrack1t" x = "0" y="0" font-size="24">MD-3</text>
-  				<circle id="demotrack2" cx="0" cy="0" r="5" stroke="#11ee99" stroke-width="3" fill="#11ee99" stroke-opacity=".4" fill-opacity=".4"/>
+  				<circle id="demotrack2" cx="0" cy="0" r="5" stroke="#11ee99" stroke-width="3" fill="#119911" stroke-opacity=".4" fill-opacity=".4"/>
   				<text id = "demotrack2t" x = "0" y="0" font-size="24">TX-35</text>
 
-  				<circle id="demotrack3" cx="0" cy="0" r="5" stroke="#ee9911" stroke-width="3" fill="#ee9911" stroke-opacity=".4" fill-opacity=".4"/>
+  				<circle id="demotrack3" cx="0" cy="0" r="5" stroke="#ee9911" stroke-width="3" fill="#111199" stroke-opacity=".4" fill-opacity=".4"/>
   				<text id = "demotrack3t" x = "0" y="0" font-size="24">OK-1</text>
 
 
@@ -456,17 +456,17 @@ onload="renderMathInElement(document.body, {delimiters: [
   	</div>
   	<section>
   		<p>
-  			There are a few things to observe here.  First, the plot for <span class="orange"><span class="orange">OK-1</span> </span> is below the other two at every point, and it requires 
-  			far fewer steps of curve-shortening flow to become something (almost) circular.  These demonstrate that, with respect to our measure, <span class="orange"><span class="orange">OK-1</span> </span> is 
+  			There are a few things to observe here.  First, the plot for <span class="blue">OK-1</span> is below the other two at every point, and it requires 
+  			far fewer steps of curve-shortening flow to become something (almost) circular.  These demonstrate that, with respect to our measure, <span class="blue">OK-1</span> is 
   			much more compact than the other two districts. 
   		</p>
   		<p>
-  			Second, we can look at the <em>shapes</em> of the three plots.  We observed that <span class="orange"><span class="orange">OK-1</span> </span>'s plot drops very quickly 
+  			Second, we can look at the <em>shapes</em> of the three plots.  We observed that <span class="blue">OK-1</span>'s plot drops very quickly 
   			as it takes relatively few curve-shortening flow steps to transform it into a circle.  It's original form 
-  			can be described as two joined rectangles with some irregularities at the boundary.  <span class="purple"><span class="purple">MD-3</span>  </span>'s plot falls 
+  			can be described as two joined rectangles with some irregularities at the boundary.  <span class="brown">MD-3</span>'s plot falls 
   			at a slower rate, which reflects the fact that the bizarreness of its geometry is not limited to its boundary, 
   			as once the curve-shortening flow smooths it out, what we're left with is something that looks like a snakey 'Y'. 
-  			<span class="teal">TX-35</span>'s plot falls quickly at the beginning but then slows down, being outpaced by <span class="purple"><span class="purple">MD-3</span>  </span>.  This is because the 
+  			<span class="green">TX-35</span>'s plot falls quickly at the beginning but then slows down, being outpaced by <span class="brown">MD-3 </span>.  This is because the 
   			boundary smoothing reduces a lot of the district's perimeter, but the long, thin strip which stretches to the southwest 
   			requires many steps to pull inward.
   		</p>
@@ -484,6 +484,50 @@ onload="renderMathInElement(document.body, {delimiters: [
 			being less compact than Iowa's with respect to any measure does not suggest that Rhode Island is gerrymandered 
 			or that Iowa is not.
 		</p>
+  </section>
+
+      <div class="chart two-columns" style="max-width:600px;background:none;border:none;margin:auto;padding:3px 3px 3px 3px;justify-content: center">
+
+        <div style="margin-right:20px">
+
+          <svg height="150" width="175">
+            <g>
+            <polygon id="ri01" points="" transform="scale(9.5) translate(2.5,3)" vector-effect="non-scaling-stroke" style="fill:#999911;stroke:#000;stroke-width:2;fill-opacity:.3" />
+            <polygon id="ri02" points="" transform="scale(6) translate(10.5,3)" vector-effect="non-scaling-stroke" style="fill:#999911;stroke:#000;stroke-width:2;fill-opacity:.3" />
+</g>
+          </svg>
+          <br />
+          <svg height="35" width = "150">
+            <text font-size="24" text-anchor = "middle" x="75" y="18">Rhode Island</text>
+          </svg>
+        </div>
+
+
+
+
+        <div style="margin-left:20px">
+          <svg height="150" width="175" >
+            <polygon id = "ia01" points="" transform="scale(6.5) translate(2,15)" vector-effect="non-scaling-stroke" style="fill:#991199;stroke:#000;stroke-width:2;fill-opacity:.3" />
+            <polygon id = "ia02" points="" transform="scale(6.5) translate(11.5,15)" vector-effect="non-scaling-stroke" style="fill:#991199;stroke:#000;stroke-width:2;fill-opacity:.3" />
+
+            <polygon id = "ia03" points="" transform="scale(8) translate(.8,5.5)" vector-effect="non-scaling-stroke" style="fill:#991199;stroke:#000;stroke-width:2;fill-opacity:.3" />
+
+            <polygon id = "ia04" points="" transform="scale(6.5) translate(13.5,6.5)" vector-effect="non-scaling-stroke" style="fill:#991199;stroke:#000;stroke-width:2;fill-opacity:.3" />
+
+
+          </svg>
+          <br />
+          <svg height="35" width = "150">
+            <text font-size="24" text-anchor = "middle" x="75" y="18">Iowa</text>
+          </svg>
+        </div>
+
+
+      </div>
+
+
+
+  <section>
     <p>
       To examine a proper comparison of districting plans under the curve-shortening flow compactness measure, we've 
       computed the plots for the districts in three different plans for North Carolina.  The first is the plan which was 
@@ -738,8 +782,8 @@ onload="renderMathInElement(document.body, {delimiters: [
   and the <span class="orange">2016 plan</span> is attributable to boundary effects rather than the districts being fundamentally more 
   regularly shaped.  You can recongize this intuitively by observing that the shapes of the districts are pretty similar between the 
   <span class="purple">2011 plan</span> and the <span class="orange">2016 plan</span>, except that the <span class="purple">2011 plan</span> 
-  has the <span class="purple">2011 NC-12</span>, which is represented by the <span class="purple">purple</span> plot which is way 
-  above the others, which pulls the average upward, and the <span class="purple">2011 districts</span> have more small tendrils 
+  has the <span class="purple">2011 NC-12</span>, represented by the <span class="purple">purple</span> plot which is way 
+  above the others, pulls the average upward. Second, the <span class="purple">2011 districts</span> have more small tendrils 
   which make them less compact, but these are ironed out relatively quickly by the curve-shortening flow process.
 </p>
 <p>
@@ -772,8 +816,8 @@ fairly similar.
   			Use the widget below to examine up to any three districts in the 115th Congress (those used for the 2016 elections) at a time.  The slider below each 
   			image controls the curve-shortening flow animation and you can use the buttons with arrows to move through one step at a time for a 
   			finer-grained view.  Can you find districts which appear to be non-compact because of their large perimeters but have plots which 
-  			drop off very rapidly?  Are there districts which the flow process sends to circles even more slowly than it does for <span class="teal">TX-35</span> and 
-  			<span class="purple">MD-3</span>? Are there districts which are less compact under this measure than some of the "worst offenders" from 
+  			drop off very rapidly?  Are there districts which the flow process sends to circles even more slowly than it does for <span class="green">TX-35</span> and 
+  			<span class="brown">MD-3</span>? Are there districts which are less compact under this measure than some of the "worst offenders" from 
         popular media articles?
   		</p>
 
@@ -972,6 +1016,8 @@ fairly similar.
 <script src="src/md03.js"></script>
 <script src="src/tx35.js"></script>
 <script src="src/ok01.js"></script>
+<script src="src/ri.js"></script>
+<script src="src/ia.js"></script>
 <script src="src/pop_statelist.js"></script>
 <script src="src/ncplot12.js"></script>
 <script src="src/ncplot16.js"></script>
