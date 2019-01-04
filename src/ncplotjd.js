@@ -27,7 +27,6 @@ document.getElementById("ncplotjd13").setAttribute("points","7.0 416.06405843054
 
 
 var newpts = ""
-console.log(document.getElementById("ncplotjd05").points.length)
 for (var i=0;i<document.getElementById("ncplotjd05").points.length;i++){
 	newpts += document.getElementById("ncplotjd05").points[i].x;
 
@@ -42,5 +41,4 @@ for (var i=0;i<document.getElementById("ncplotjd05").points.length;i++){
 }
 
 document.getElementById("ncplotjdavg").setAttribute("points",newpts);
-console.log(newpts)
 newpts = "";
