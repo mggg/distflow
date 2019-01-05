@@ -42,3 +42,5 @@ for (var i=0;i<document.getElementById("ncplot1605").points.length;i++){
 
 document.getElementById("ncplot16avg").setAttribute("points",newpts);
 newpts = "";
+
+

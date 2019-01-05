@@ -42,3 +42,214 @@ for (var i=0;i<document.getElementById("ncplotjd05").points.length;i++){
 
 document.getElementById("ncplotjdavg").setAttribute("points",newpts);
 newpts = "";
+
+
+
+
+
+
+
+
+document.getElementById('ncdist1').addEventListener('mouseover', function() {
+	document.getElementById('ncplot1601').style.strokeOpacity = 1
+	document.getElementById('ncplot1201').style.strokeOpacity = 1
+	document.getElementById('ncplotjd01').style.strokeOpacity = 1
+
+});
+
+document.getElementById('ncdist1').addEventListener('mouseout', function() {
+	document.getElementById('ncplot1601').style.strokeOpacity = .1
+	document.getElementById('ncplot1201').style.strokeOpacity = .1
+	document.getElementById('ncplotjd01').style.strokeOpacity = .1
+
+});
+
+
+document.getElementById('ncdist2').addEventListener('mouseover', function() {
+	document.getElementById('ncplot1602').style.strokeOpacity = 1
+	document.getElementById('ncplot1202').style.strokeOpacity = 1
+	document.getElementById('ncplotjd02').style.strokeOpacity = 1
+
+});
+
+document.getElementById('ncdist2').addEventListener('mouseout', function() {
+	document.getElementById('ncplot1602').style.strokeOpacity = .1
+	document.getElementById('ncplot1202').style.strokeOpacity = .1
+	document.getElementById('ncplotjd02').style.strokeOpacity = .1
+
+});
+
+
+
+document.getElementById('ncdist3').addEventListener('mouseover', function() {
+	document.getElementById('ncplot1603').style.strokeOpacity = 1
+	document.getElementById('ncplot1203').style.strokeOpacity = 1
+	document.getElementById('ncplotjd03').style.strokeOpacity = 1
+
+});
+
+document.getElementById('ncdist3').addEventListener('mouseout', function() {
+	document.getElementById('ncplot1603').style.strokeOpacity = .1
+	document.getElementById('ncplot1203').style.strokeOpacity = .1
+	document.getElementById('ncplotjd03').style.strokeOpacity = .1
+
+});
+
+
+
+document.getElementById('ncdist4').addEventListener('mouseover', function() {
+	document.getElementById('ncplot1604').style.strokeOpacity = 1
+	document.getElementById('ncplot1204').style.strokeOpacity = 1
+	document.getElementById('ncplotjd04').style.strokeOpacity = 1
+
+});
+
+document.getElementById('ncdist4').addEventListener('mouseout', function() {
+	document.getElementById('ncplot1604').style.strokeOpacity = .1
+	document.getElementById('ncplot1204').style.strokeOpacity = .1
+	document.getElementById('ncplotjd04').style.strokeOpacity = .1
+
+});
+
+
+document.getElementById('ncdist5').addEventListener('mouseover', function() {
+	document.getElementById('ncplot1605').style.strokeOpacity = 1
+	document.getElementById('ncplot1205').style.strokeOpacity = 1
+	document.getElementById('ncplotjd05').style.strokeOpacity = 1
+
+});
+
+document.getElementById('ncdist5').addEventListener('mouseout', function() {
+	document.getElementById('ncplot1605').style.strokeOpacity = .1
+	document.getElementById('ncplot1205').style.strokeOpacity = .1
+	document.getElementById('ncplotjd05').style.strokeOpacity = .1
+
+});
+
+document.getElementById('ncdist6').addEventListener('mouseover', function() {
+	document.getElementById('ncplot1606').style.strokeOpacity = 1
+	document.getElementById('ncplot1206').style.strokeOpacity = 1
+	document.getElementById('ncplotjd06').style.strokeOpacity = 1
+
+});
+
+document.getElementById('ncdist6').addEventListener('mouseout', function() {
+	document.getElementById('ncplot1606').style.strokeOpacity = .1
+	document.getElementById('ncplot1206').style.strokeOpacity = .1
+	document.getElementById('ncplotjd06').style.strokeOpacity = .1
+
+});
+
+document.getElementById('ncdist7').addEventListener('mouseover', function() {
+	document.getElementById('ncplot1607').style.strokeOpacity = 1
+	document.getElementById('ncplot1207').style.strokeOpacity = 1
+	document.getElementById('ncplotjd07').style.strokeOpacity = 1
+
+});
+
+document.getElementById('ncdist7').addEventListener('mouseout', function() {
+	document.getElementById('ncplot1607').style.strokeOpacity = .1
+	document.getElementById('ncplot1207').style.strokeOpacity = .1
+	document.getElementById('ncplotjd07').style.strokeOpacity = .1
+
+});
+
+
+document.getElementById('ncdist8').addEventListener('mouseover', function() {
+	document.getElementById('ncplot1608').style.strokeOpacity = 1
+	document.getElementById('ncplot1208').style.strokeOpacity = 1
+	document.getElementById('ncplotjd08').style.strokeOpacity = 1
+
+});
+
+document.getElementById('ncdist8').addEventListener('mouseout', function() {
+	document.getElementById('ncplot1608').style.strokeOpacity = .1
+	document.getElementById('ncplot1208').style.strokeOpacity = .1
+	document.getElementById('ncplotjd08').style.strokeOpacity = .1
+
+});
+
+
+
+
+document.getElementById('ncdist9').addEventListener('mouseover', function() {
+	document.getElementById('ncplot1609').style.strokeOpacity = 1
+	document.getElementById('ncplot1209').style.strokeOpacity = 1
+	document.getElementById('ncplotjd09').style.strokeOpacity = 1
+
+});
+
+document.getElementById('ncdist9').addEventListener('mouseout', function() {
+	document.getElementById('ncplot1609').style.strokeOpacity = .1
+	document.getElementById('ncplot1209').style.strokeOpacity = .1
+	document.getElementById('ncplotjd09').style.strokeOpacity = .1
+
+});
+
+
+
+
+document.getElementById('ncdist10').addEventListener('mouseover', function() {
+	document.getElementById('ncplot1610').style.strokeOpacity = 1
+	document.getElementById('ncplot1210').style.strokeOpacity = 1
+	document.getElementById('ncplotjd10').style.strokeOpacity = 1
+
+});
+
+document.getElementById('ncdist10').addEventListener('mouseout', function() {
+	document.getElementById('ncplot1610').style.strokeOpacity = .1
+	document.getElementById('ncplot1210').style.strokeOpacity = .1
+	document.getElementById('ncplotjd10').style.strokeOpacity = .1
+
+});
+
+
+
+
+
+document.getElementById('ncdist11').addEventListener('mouseover', function() {
+	document.getElementById('ncplot1611').style.strokeOpacity = 1
+	document.getElementById('ncplot1211').style.strokeOpacity = 1
+	document.getElementById('ncplotjd11').style.strokeOpacity = 1
+
+});
+
+document.getElementById('ncdist11').addEventListener('mouseout', function() {
+	document.getElementById('ncplot1611').style.strokeOpacity = .1
+	document.getElementById('ncplot1211').style.strokeOpacity = .1
+	document.getElementById('ncplotjd11').style.strokeOpacity = .1
+
+});
+
+
+
+document.getElementById('ncdist12').addEventListener('mouseover', function() {
+	document.getElementById('ncplot1612').style.strokeOpacity = 1
+	document.getElementById('ncplot1212').style.strokeOpacity = 1
+	document.getElementById('ncplotjd12').style.strokeOpacity = 1
+
+});
+
+document.getElementById('ncdist12').addEventListener('mouseout', function() {
+	document.getElementById('ncplot1612').style.strokeOpacity = .1
+	document.getElementById('ncplot1212').style.strokeOpacity = .1
+	document.getElementById('ncplotjd12').style.strokeOpacity = .1
+
+});
+
+
+
+
+document.getElementById('ncdist13').addEventListener('mouseover', function() {
+	document.getElementById('ncplot1613').style.strokeOpacity = 1
+	document.getElementById('ncplot1213').style.strokeOpacity = 1
+	document.getElementById('ncplotjd13').style.strokeOpacity = 1
+
+});
+
+document.getElementById('ncdist13').addEventListener('mouseout', function() {
+	document.getElementById('ncplot1613').style.strokeOpacity = .1
+	document.getElementById('ncplot1213').style.strokeOpacity = .1
+	document.getElementById('ncplotjd13').style.strokeOpacity = .1
+
+});
