@@ -547,7 +547,8 @@ onload="renderMathInElement(document.body, {delimiters: [
 
       Mouse over a column of districts to highlight the three corresponding plots in the graph.  
       The shaded regions are the average plus/minus one standard deviation of the value of all 
-      districts in the plan after a particular number of rounds of curve-shortening flow.
+      districts in the plan after a particular number of rounds of curve-shortening flow and the thin 
+      plots are the averages.
     </summary>
 <div class = "chart two-columns" id = "nccomp">
  <div>
@@ -630,11 +631,11 @@ onload="renderMathInElement(document.body, {delimiters: [
           <text x="0" y="99"  fill="black">5</text>
 
 
-          <polyline id="ncplotjdavg" points="" transform="translate(-17,-5) scale(4,1)" vector-effect="non-scaling-stroke"  style="stroke:#0BA66B; stroke-width:3;fill:none;stroke-opacity:.8; " />
+          <polyline id="ncplotjdavg" points="" transform="translate(-17,-5) scale(4,1)" vector-effect="non-scaling-stroke"  style="stroke:#0BA66B; stroke-width:2;fill:none;stroke-opacity:.8; " />
  
-          <polyline id="ncplot16avg" points="" transform="translate(-17,-5) scale(4,1)" vector-effect="non-scaling-stroke"  stroke-linecap="round" stroke-dasharray="1, 5" style="stroke:#ee9911; stroke-width:4;fill:none;stroke-opacity:.8; " />
+          <polyline id="ncplot16avg" points="" transform="translate(-17,-5) scale(4,1)" vector-effect="non-scaling-stroke"  stroke-linecap="round" stroke-dasharray="1, 5" style="stroke:#ee9911; stroke-width:2;fill:none;stroke-opacity:.8; " />
 
-          <polyline id="ncplot12avg" points="" transform="translate(-17,-5) scale(4,1)" vector-effect="non-scaling-stroke"  stroke-dasharray="5,5" style="stroke:#9911ee; stroke-width:3;fill:none; stroke-opacity:.8; " />
+          <polyline id="ncplot12avg" points="" transform="translate(-17,-5) scale(4,1)" vector-effect="non-scaling-stroke"  stroke-dasharray="5,5" style="stroke:#9911ee; stroke-width:2;fill:none; stroke-opacity:.8; " />
 
 
           <text x="250" y="515" text-anchor="middle" fill="black"> &ndash; Curve-Shortening Flow Steps  &rarr;</text>

@@ -57,7 +57,7 @@ for (var i=0;i<document.getElementById("ncplot1205").points.length;i++){
 
 }
 
-//document.getElementById("ncplot12avg").setAttribute("points",newpts);
+document.getElementById("ncplot12avg").setAttribute("points",newpts);
 
 document.getElementById("ncplot12std").setAttribute("points",lowerrng+upperrng);
 
