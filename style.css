@@ -364,6 +364,35 @@ svg {
 }
 
 
+.slider1::-webkit-slider-thumb {
+  background: #9911ee; /* Green background */
+}
+
+.slider1::-moz-range-thumb {
+  background: #9911ee; /* Green background */
+}
+
+
+
+.slider2::-webkit-slider-thumb {
+  background: #09A469; /* Green background */
+}
+
+.slider2::-moz-range-thumb {
+  background: #09A469; /* Green background */
+}
+
+
+.slider3::-webkit-slider-thumb {
+  background: #ee9911; /* Green background */
+}
+
+.slider3::-moz-range-thumb {
+  background: #ee9911; /* Green background */
+}
+
+
+
 .chart button {
   color: white;
   letter-spacing: 0.1rem;
