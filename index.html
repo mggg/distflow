@@ -224,7 +224,8 @@ onload="renderMathInElement(document.body, {delimiters: [
   					including lawyers, politicians, interested citizens, as well as mathematicians.
   				</li>
   				<li>
-  					<h4>Stable</h4> Two similar shapes should be assigned similar vectors.
+  					<h4>Stable</h4> Two similar shapes should be assigned similar vectors, and small changes to a shape should 
+            cause small changes in the score.
   				</li>				
   				<li>
   					<h4>Computable</h4> There should be an efficient algorithm for computing these scores, ideally from 
@@ -273,8 +274,8 @@ onload="renderMathInElement(document.body, {delimiters: [
   		<p>
   			The procedure to perform curve-shortening flow is pretty straightforward. At each point on the boundary of our region, 
   			we'll find the tangent line and move that point inward in the direction perpendicular to the tangent. How far to move it 
-  			will depend on the <em> curvature </em> of the boundary at the point.  The last missing piece is to articulate a definition 
-  			of curvature.  Intuitively, curvature measures how "curvy" the boundary is at a particular point.  If our point lies on a very 
+  			will depend on the <em> curvature </em> of the boundary at the point. 
+        Intuitively, curvature measures how "curvy" the boundary is at a particular point.  If our point lies on a very 
   			bendy portion of the boundary, then the curvature at that point is large. If our point is on a portion that looks like a straight line, 
   			then the curvature is small.  
   		</p>
@@ -547,11 +548,38 @@ onload="renderMathInElement(document.body, {delimiters: [
       currently being challenged in the courts as a partisan gerrymander, and its flow progressions are plotted with dotted 
       <span class="orange">orange</span>  lines.  
     </p>
+</section>
+      <div class="chart three-columns" style="background:none;border:none;margin:auto;padding:3px 3px 3px 3px;justify-content: center">
+
+        <div>
+          <div id = "nc12wholesvg">
+          </div>
+          <br />
+          <svg height="35" width = "300">
+            <text font-size="24" text-anchor = "middle" x="150" y="18">2011</text>
+          </svg>
+        </div>
+        <div style="margin-left:20px;margin-right:20px">
+          <div id = "ncjudgeswholesvg">
+          </div>
+          <br />
+          <svg height="35" width = "300">
+            <text font-size="24" text-anchor = "middle" x="150" y="18">Judges</text>
+          </svg>
+        </div>
+        <div>
+          <div id = "nc16wholesvg">
+          </div>
+          <br />
+          <svg height="35" width = "300">
+            <text font-size="24" text-anchor = "middle" x="150" y="18">2016</text>
+          </svg>
+        </div>
+
+      </div>
 
 
 
-
-  	</section>
     <summary>
 
       Mouse over a column of districts to highlight the three corresponding plots in the graph.  
@@ -1083,6 +1111,9 @@ fairly similar.
 <script src="src/demo_plot_csf.js"></script>
 <!-- <script src="src/demo_il4_plot_csf.js"></script> -->
 
+<script src="src/nc12svg.js"></script>
+<script src="src/ncjudgessvg.js"></script>
+<script src="src/nc16svg.js"></script>
 
 </body>
 </html>
