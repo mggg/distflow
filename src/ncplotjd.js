@@ -47,7 +47,7 @@ for (var i=0;i<document.getElementById("ncplotjd05").points.length;i++){
 	mean = mean/13
 	for (var j=1;j<=13;j++){
 		jl = j>=10?j:"0"+j;
-		std+= (1/12)*parseFloat((document.getElementById("ncplotjd"+jl).points[i]==null? 502: document.getElementById("ncplotjd"+jl).points[i].y)- mean)**2;
+		std+= (1/48)*parseFloat((document.getElementById("ncplotjd"+jl).points[i]==null? 502: document.getElementById("ncplotjd"+jl).points[i].y)- mean)**2;
 	}
 	upperrng = " "+(mean+Math.sqrt(std))+" " + upperrng;
 	upperrng = document.getElementById("ncplotjd05").points[i].x + upperrng;
