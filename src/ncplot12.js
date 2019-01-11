@@ -39,7 +39,6 @@ for (var i=0;i<document.getElementById("ncplot1205").points.length;i++){
 	for (var j=1;j<=13;j++){
 		jl = j>=10?j:"0"+j;
 		mean+= document.getElementById("ncplot12"+jl).points[i]==null? 502: document.getElementById("ncplot12"+jl).points[i].y;
-		console.log(document.getElementById("ncplot12"+jl).points[i]==null? 502: document.getElementById("ncplot12"+jl).points[i].y);
 
 	}
 	newpts += " "+mean/13+" ";
