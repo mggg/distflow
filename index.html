@@ -336,14 +336,15 @@ onload="renderMathInElement(document.body, {delimiters: [
   			we can use the line passing through two points very close to our point.
   		</p>
   		<p>
-  			For curvature, we're going to do something similar.  If we're close enough to our point, these secant lines are 
-  			chords of the osculating circle which meet the radius perpendicularly.  Since we can measure both the length of this 
-  			chord, which is the distance between our two nearby points, as well as the distance of our point from the chord, we can 
-  			recover the radius of the osculating circle. It turns out (somewhat sensibly) that the radius of this circle is larger the 
-  			wider the angle formed by our three points.
+  			For curvature, we're going to do something similar.  Since any three (non-collinear) points define a circle, 
+        if we take this pair of points along with our point of interest, we have a circle which touches the boundary of 
+        our region in a way that's almost like the osculating circle.  In fact, much like we can define the tangent line 
+        as coming from a limit of these secant lines, we can also define the osculating circle to be the limit of the circles 
+        defined by these three points as the two nearby points approach the point we're looking at.
   			All of this sounds a little complicated, but once we go through this construction, we can convince ourselves of the fact that 
   			these substitutions mean that we move each vertex along the line which bisects its angle at a distance proportional to $\pi$ minus 
-  			the measure of that angle.
+  			the measure of that angle.  This makes sense intuitively, since the wider the angle, the less bendy the shape is at that point, so 
+        the curvature should be smaller.
   		</p>
   	</section>
 
